@@ -16,5 +16,6 @@ Lorem ipsum dolor sit amer, consectetur aiscing elit. sed non risus.
 ```javascript
 function(){
     console.log('hola mundo');
+    confirm('Hola mundo')
 }
 ```
