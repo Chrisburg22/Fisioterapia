@@ -1,4 +1,5 @@
 ---
+import { Counter } from "./Counter.jsx";
 import HeaderButton from "./HeaderButton.astro";
 
 console.log();
@@ -13,6 +14,16 @@ console.log();
       All the information about SpaceX launches
     </p>
   </div>
+
+  <!-- Se ncecesita agregar el client:visible para que nuestro componente de preact funcione. -->
+
+  <!-- Se puede hacer que es estado que se esta manegando en este componente
+  persiste la información en todas las paginas esto se logra con eso:
+  transition:persist -->
+
+  <!-- Por defecto el componente es identico. -->
+  <Counter  transition:persist client:visible />
+
   <nav class="flex- flex-col items-center justify-between w-full text-center">
     <HeaderButton class="text-white" href="/">
       <svg
