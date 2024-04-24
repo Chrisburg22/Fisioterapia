@@ -1,6 +1,4 @@
 ---
-import { Image } from "astro:assets";
-
 import logoImage from "../../images/logo2.png";
 import HeaderPButton from "./HeaderPButton.astro";
 import Email from "../icons/Email.astro";
@@ -9,38 +7,42 @@ import Instagram from "../icons/Instagram.astro";
 import WhatsApp from "../icons/WhatsApp.astro";
 ---
 
-<header
-  class="flex items-center justify-between p-6 h-20 bg-emerald-300 w-full fixed"
->
-  <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
-    <img
-      class="mb-5 rounded-lg h-full"
-      src={logoImage.src}
-      alt={`Patch for launch `}
-    />
-  </picture>
-  <nav class="flex justify-center w-2/4">
-    <HeaderPButton href="/"> Inicio </HeaderPButton>
-    <HeaderPButton href="Conocenos"> Conocenos </HeaderPButton>
-    <HeaderPButton href="Historia"> Historial </HeaderPButton>
-    <HeaderPButton href="Servicios"> Servicios </HeaderPButton>
-  </nav>
-  <section class="flex justify-center gap-6 w-1/4">
-    <Facebook
-      link="https://www.facebook.com/rehabilitationphysical"
-      tlwStyles="hover:stroke-blue-700 cursor-pointer"
-    />
-    <Instagram
-      link="https://www.instagram.com/rehabilitationphysical_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-      tlwStyles="hover:stroke-pink-500 cursor-pointer"
-    />
-    <WhatsApp
-      link="https://wa.me/+523332579424"
-      tlwStyles="hover:stroke-lime-300 cursor-pointer"
-    />
-    <Email
-      link="mailto:physical.rehabilitationtf@gmail.com"
-      tlwStyles="hover:stroke-red-500 cursor-pointer"
-    />
-  </section>
+<header class="bg-emerald-300 body-font fixed w-full z-10">
+  <div
+    class="w-full flex justify-between p-2 flex-col md:flex-row items-center"
+  >
+    <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
+      <img
+        class="md:ml-auto md:mr-auto rounded-lg h-full"
+        src={logoImage.src}
+        alt={`Patch for launch `}
+      />
+    </picture>
+    <nav
+      class="w-2/4 flex items-center text-base justify-center m-0 flex-col sm:flex-row"
+    >
+      <HeaderPButton href="/"> Inicio </HeaderPButton>
+      <HeaderPButton href="clinica"> Nuestra clínica </HeaderPButton>
+      <HeaderPButton href="servicios"> Servicios </HeaderPButton>
+      <HeaderPButton href="contacto"> Contacto </HeaderPButton>
+    </nav>
+    <section class="flex justify-center gap-6 w-1/4">
+      <Facebook
+        link="https://www.facebook.com/rehabilitationphysical"
+        tlwStyles="hover:stroke-blue-700 cursor-pointer"
+      />
+      <Instagram
+        link="https://www.instagram.com/rehabilitationphysical_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+        tlwStyles="hover:stroke-pink-500 cursor-pointer"
+      />
+      <WhatsApp
+        link="https://wa.me/+523332579424"
+        tlwStyles="hover:stroke-lime-300 cursor-pointer"
+      />
+      <Email
+        link="mailto:physical.rehabilitationtf@gmail.com"
+        tlwStyles="hover:stroke-red-500 cursor-pointer"
+      />
+    </section>
+  </div>
 </header>
