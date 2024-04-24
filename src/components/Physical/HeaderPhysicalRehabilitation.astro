@@ -1,4 +1,7 @@
 ---
+import { Image } from "astro:assets";
+
+import logoImage from "../../images/logo2.png";
 import HeaderPButton from "./HeaderPButton.astro";
 import Email from "../icons/Email.astro";
 import Facebook from "../icons/Facebook.astro";
@@ -12,7 +15,7 @@ import WhatsApp from "../icons/WhatsApp.astro";
   <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
     <img
       class="mb-5 rounded-lg h-full"
-      src="../../public/physicalLogo.png"
+      src={logoImage.src}
       alt={`Patch for launch `}
     />
   </picture>
