@@ -1,0 +1,43 @@
+---
+import HeaderPButton from "./HeaderPButton.astro";
+import Email from "../icons/Email.astro";
+import Facebook from "../icons/Facebook.astro";
+import Instagram from "../icons/Instagram.astro";
+import WhatsApp from "../icons/WhatsApp.astro";
+---
+
+<header
+  class="flex items-center justify-between p-6 h-20 bg-emerald-300 w-full fixed"
+>
+  <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
+    <img
+      class="mb-5 rounded-lg h-full"
+      src="../../public/PhysicalLogo.png"
+      alt={`Patch for launch `}
+    />
+  </picture>
+  <nav class="flex justify-center w-2/4">
+    <HeaderPButton href="/"> Inicio </HeaderPButton>
+    <HeaderPButton href="Conocenos"> Conocenos </HeaderPButton>
+    <HeaderPButton href="Historia"> Historial </HeaderPButton>
+    <HeaderPButton href="Servicios"> Servicios </HeaderPButton>
+  </nav>
+  <section class="flex justify-center gap-6 w-1/4">
+    <Facebook
+      link="https://www.facebook.com/rehabilitationphysical"
+      tlwStyles="hover:stroke-blue-700 cursor-pointer"
+    />
+    <Instagram
+      link="https://www.instagram.com/rehabilitationphysical_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+      tlwStyles="hover:stroke-pink-500 cursor-pointer"
+    />
+    <WhatsApp
+      link="https://wa.me/+523332579424"
+      tlwStyles="hover:stroke-lime-300 cursor-pointer"
+    />
+    <Email
+      link="mailto:physical.rehabilitationtf@gmail.com"
+      tlwStyles="hover:stroke-red-500 cursor-pointer"
+    />
+  </section>
+</header>
