@@ -4,19 +4,14 @@ import Facebook from "../icons/Facebook.astro";
 import Instagram from "../icons/Instagram.astro";
 import WhatsApp from "../icons/WhatsApp.astro";
 import logoImage from "../../images/logo2.png";
+import Logo from "./Logo.astro";
 ---
 
-<footer class="bg-emerald-300 body-font ">
+<footer class="bg-emerald-100 body-font">
   <div
     class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
   >
-      <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
-        <img
-          class="mb-5 rounded-lg h-full"
-          src={logoImage.src}
-          alt={`Patch for launch `}
-        />
-      </picture>
+    <Logo />
     <p
       class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
     >

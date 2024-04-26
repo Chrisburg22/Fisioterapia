@@ -5,21 +5,18 @@ import Email from "../icons/Email.astro";
 import Facebook from "../icons/Facebook.astro";
 import Instagram from "../icons/Instagram.astro";
 import WhatsApp from "../icons/WhatsApp.astro";
+import Logo from "./Logo.astro";
 ---
 
-<header class="bg-emerald-300 body-font fixed w-full z-10">
+<header class="bg-emerald-100 body-font fixed w-full z-10">
   <div
     class="w-full flex justify-between p-2 flex-col md:flex-row items-center"
   >
-    <picture class="flex justify-center w-1/4 h-20 cursor-pointer">
-      <img
-        class="md:ml-auto md:mr-auto rounded-lg h-full"
-        src={logoImage.src}
-        alt={`Patch for launch `}
-      />
-    </picture>
+    <!-- <div class="hidden md:block"> -->
+      <Logo />
+    <!-- </div> -->
     <nav
-      class="w-2/4 flex items-center text-base justify-center m-0 flex-col sm:flex-row"
+      class="w-2/4 items-center text-base justify-center m-0 flex-col sm:flex-row hidden lg:flex"
     >
       <HeaderPButton href="/"> Inicio </HeaderPButton>
       <HeaderPButton href="clinica"> Nuestra clínica </HeaderPButton>
