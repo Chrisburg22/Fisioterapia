@@ -7,6 +7,9 @@ export default {
         "h-100": "800px",
       },
     },
+    fontFamily: {
+      'cursive': ["Dancing Script"],
+    },
   },
   plugins: [],
 };
