@@ -1,5 +1,7 @@
-<astro:fragment>
-  <section class="text-gray-600 body-font h-200" id="inicio">
+---
+import InicioImage from "../../images/inicio.jpg";
+---
+  <section class="text-gray-600 body-font h-200 px-12" id="inicio">
     <div
       class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
     >
@@ -12,7 +14,7 @@
           Physical Rehabilitation
         </h1>
         <p
-          class="mb-8 leading-relaxed text-[20px] text-pretty font-bold text-black "
+          class="mb-8 leading-relaxed text-[20px] text-pretty font-bold text-black px-8 sm:px-0"
         >
           Nuestra misión es proporcionar atención de fisioterapia integral y
           personalizada para ayudar a nuestros pacientes a recuperarse de
@@ -32,9 +34,8 @@
         <img
           class="object-cover object-center rounded"
           alt="hero"
-          src="https://dummyimage.com/720x600"
+          src={InicioImage.src}
         />
       </div>
     </div>
   </section>
-</astro:fragment>
