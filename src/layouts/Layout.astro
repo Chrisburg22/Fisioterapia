@@ -1,7 +1,7 @@
 ---
 import { ViewTransitions } from "astro:transitions";
-import HeaderPhysicalRehabilitation from "@/components/Physical/HeaderPhysicalRehabilitation.astro";
-import Footer from "@/components/Physical/Footer.astro";
+import Footer from "@/components/Footer.astro";
+import Header from "@/components/Header.astro";
 
 interface Props {
   title: string;
@@ -23,9 +23,8 @@ const { title } = Astro.props;
     <ViewTransitions />
   </head>
   <body class="bg-sky-100 min-h-screen">
-    <HeaderPhysicalRehabilitation />
-    <main class="h-full  w-full px-4  py-16 sm:py-32 md:py-24 lg:py-36" transition:animate="slide" >
-      <div class="fixed lg:hidden right-12">****</div>
+    <Header />
+    <main class="h-full w-full text-black" transition:animate="slide">
       <slot />
     </main>
     <Footer />
