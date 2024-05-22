@@ -1,15 +1,30 @@
+---
+const serviceTitles: string[] = [
+  "Rehabilitación pre y postquirúrgica",
+  "Aplicación de Kinesiotape",
+  "Rehabilitación ortopédica",
+  "Masajes deportivos",
+  "Masajes relajantes",
+  "Rehabilitación Deportiva",
+  "Ejercicios con fines terapéuticos",
+  "Rehabilitación geriátrica",
+  "Fisioterapia Traumatológica",
+  "Fisioterapia Neurológica",
+];
+---
+
 <footer
   class="relative bg-gray-900 text-white px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-24"
 >
   <div class="flex flex-col md:flex-row">
     <div class="w-full lg:w-2/6 lg:mx-4 lg:pr-8">
-      <h3 class="font-bold text-2xl">DentalPro</h3>
+      <h3 class="font-bold text-2xl">Physical Rehabilitation</h3>
       <p class="text-gray-400">
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy.
+        Especializado en la recuperación de lesiones, donde la confianza y la
+        comodidad son prioridades
       </p>
 
-      <form class="flex items-center mt-6">
+      <!-- <form class="flex items-center mt-6">
         <div class="w-full">
           <label
             class="block uppercase tracking-wide text-gray-600 text-xs font-bold mb-2"
@@ -31,24 +46,27 @@
             >
           </div>
         </div>
-      </form>
+      </form> -->
     </div>
 
     <div class="w-full lg:w-1/6 mt-8 lg:mt-0 lg:mx-4">
       <h5 class="uppercase tracking-wider font-semibold">Treatments</h5>
       <ul class="mt-4">
-        <li class="mt-2">
-          <a href="#" title="" class="opacity-75 hover:opacity-100"
-            >General Dentistry</a>
-        </li>
-        <li class="mt-2">
-          <a href="#" title="" class="opacity-75 hover:opacity-100"
-            >Cosmetic Dentistry</a>
-        </li>
-        <li class="mt-2">
-          <a href="#" title="" class="opacity-75 hover:opacity-100"
-            >Oral Health</a>
-        </li>
+        {
+          serviceTitles.map((service) => {
+            return (
+              <li class="mt-2">
+                <a
+                  href="#tratamientos"
+                  title=""
+                  class="opacity-75 hover:opacity-100"
+                >
+                  {service}
+                </a>
+              </li>
+            );
+          })
+        }
       </ul>
     </div>
 
@@ -59,7 +77,7 @@
           <a
             href="#"
             title=""
-            class="block flex items-center opacity-75 hover:opacity-100"
+            class="flex items-center opacity-75 hover:opacity-100"
           >
             <span>
               <svg
@@ -74,14 +92,16 @@
                 ></path>
               </svg>
             </span>
-            <span class="ml-3"> 1985 Kerry Way, Whittier, CA, USA </span>
+            <span class="ml-3">
+              Calle 3 de Junio #421, San Rafael, Guadalajara Jalisco, México.
+            </span>
           </a>
         </li>
         <li class="mt-4">
           <a
             href="#"
             title=""
-            class="block flex items-center opacity-75 hover:opacity-100"
+            class="flex items-center opacity-75 hover:opacity-100"
           >
             <span>
               <svg
@@ -98,8 +118,9 @@
               >
             </span>
             <span class="ml-3">
-              Mon - Fri: 9:00 - 19:00<br />
-              Closed on Weekends
+              Lunes - Viernes: 9:00 - 21:00<br />
+              Sabado: 9:00 - 15:00<br />
+              Domingo cerrado
             </span>
           </a>
         </li>
@@ -107,7 +128,7 @@
           <a
             href="#"
             title=""
-            class="block flex items-center opacity-75 hover:opacity-100"
+            class="flex items-center opacity-75 hover:opacity-100"
           >
             <span>
               <svg
@@ -122,14 +143,14 @@
                 ></path>
               </svg>
             </span>
-            <span class="ml-3"> +1 562-789-1935 </span>
+            <span class="ml-3"> +52 33 32 57 94 24</span>
           </a>
         </li>
         <li class="mt-4">
           <a
             href="#"
             title=""
-            class="block flex items-center opacity-75 hover:opacity-100"
+            class="flex items-center opacity-75 hover:opacity-100"
           >
             <span>
               <svg
@@ -144,7 +165,7 @@
                 ></path>
               </svg>
             </span>
-            <span class="ml-3"> dentalpro@example.com </span>
+            <span class="ml-3"> tfisicarehabilitation@gmail.com </span>
           </a>
         </li>
       </ul>

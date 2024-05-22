@@ -1,12 +1,12 @@
 ---
 import Image from "@/images/inicio.jpg";
 const phoneNumber = "+523332579424"; // Reemplaza con el número de teléfono real
-const message = "Buen dia, quiero agendar una cita";
+const message = "Hola, me gustaría agendar una cita";
 const encodedMessage = encodeURIComponent(message);
 const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 ---
 
-<div class="bg-gray-100">
+<div class="bg-gray-100" id="inicio">
   <section
     class="cover bg-blue-teal-gradient relative bg-blue-400 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 overflow-hidden py-48 flex
     items-center"
@@ -33,7 +33,7 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
         <a
           target="_blank"
           href={whatsappLink}
-          class="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold"
+          class="px-8 py-4 bg-teal-500 text-white rounded inline-block mt-8 font-semibold hover:bg-black active:bg-black"
           >Agendar Cita</a
         >
       </div>

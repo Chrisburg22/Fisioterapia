@@ -5,11 +5,19 @@ import SmallCarousel from "./SmallCarousel.astro";
 ---
 
 <!-- CARAOUSEL -->
-<div id="indicators-carousel" class="relative w-full" data-carousel="static">
+<div id="tratamientos" class="relative w-full" data-carousel="static">
   <!-- Carousel wrapper -->
+
   <div
-    class="relative h-80 overflow-hidden rounded-lg md:h-96 bg-blue-300 flex justify-center items-center"
+    class="h-96 overflow-hidden rounded-lg flex justify-center items-center bg-blue-300"
   >
+    <div class="self-start p-4">
+      <h4
+        class="text-black text-md uppercase font-semibold tracking-widest bg-blue-300"
+      >
+        Tratamientos
+      </h4>
+    </div>
     <!-- LARGE CARoUSEL -->
     <div class="hidden xl:block">
       <LargeCarpusel />
@@ -32,7 +40,7 @@ import SmallCarousel from "./SmallCarousel.astro";
     </div>
 
     <!-- LARGE CARoUSEL -->
-    <div class="hidden md:block">
+    <div class="hidden md:block lg:hidden">
       <MediumCarousel />
       <div
         class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2"
