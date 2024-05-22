@@ -1,6 +1,21 @@
-<section class="relative bg-teal-500 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-8">
+---
+const phoneNumber = "+523332579424"; // Reemplaza con el número de teléfono real
+const message = "Hola, me gustaría agendar una cita";
+const encodedMessage = encodeURIComponent(message);
+const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+---
+
+<section
+  class="relative bg-teal-500 px-4 sm:px-8 lg:px-16 xl:px-40 2xl:px-64 py-8"
+>
   <div class="flex items-center justify-center">
-    <h2 class="text-xl font-bold text-white">Get in touch with us today! Call us on: +1 562-789-1935</h2>
-    <a href="#" class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold ml-8">Book Appointment</a>
+    <h2 class="text-xl font-bold text-white">
+      Contactanos hoy mismo! Manda mensage por WhatsApp
+    </h2>
+    <a
+      href={whatsappLink}
+      class="px-8 py-4 bg-white text-blue-600 rounded inline-block font-semibold ml-8"
+      >Agendar</a
+    >
   </div>
 </section>
