@@ -8,8 +8,8 @@ export default {
       },
     },
     fontFamily: {
-      'cursive': ["Dancing Script"],
+      cursive: ["Dancing Script"],
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
 };

@@ -1,0 +1,87 @@
+---
+import Revicion from "../svgs/Revicion.astro";
+import Search from "../svgs/Search.astro";
+import CarouselItem from "./CarouselItem.astro";
+
+const firstGroupCarouselItems = [
+  {
+    message:
+      "Hola, me gustaría saber más sobre su servicio de Rehabilitación pre y postquirúrgica.",
+    title: "Rehabilitación pre y postquirúrgica",
+    description: "Acelera la recuperación antes y después de una cirugía.",
+  },
+  {
+    message:
+      "Hola, me gustaría obtener información sobre la Aplicación de Kinesiotape.",
+    title: "Aplicación de Kinesiotape",
+    description: "Soporte muscular y articular sin restringir el movimiento.",
+  },
+  {
+    message:
+      "Hola, me gustaría saber más sobre su servicio de Rehabilitación ortopédica.",
+    title: "Rehabilitación ortopédica",
+    description:
+      "Recupera fuerza y movilidad tras lesiones musculoesqueléticas.",
+  },
+  {
+    message:
+      "Hola, me gustaría obtener información sobre sus Masajes deportivos.",
+    title: "Masajes deportivos",
+    description: "Prevención de lesiones y mejora del rendimiento deportivo.",
+  },
+  {
+    message: "Hola, me gustaría saber más sobre sus Masajes relajantes.",
+    title: " Masajes de relajación",
+    description: "Reducción del estrés y promoción de la relajación.",
+  },
+  {
+    message:
+      "Hola, me gustaría obtener información sobre su servicio de Rehabilitación Deportiva.",
+    title: "Rehabilitación Deportiva",
+    description: "Recuperación rápida de lesiones para deportistas.",
+  },
+  {
+    message:
+      "Hola, me gustaría saber más sobre los Ejercicios con fines terapéuticos que ofrecen.",
+    title: "Ejercicios con fines terapéuticos",
+    description:
+      "Mejora la fuerza, flexibilidad y funcionalidad personalizadas.",
+  },
+  {
+    message:
+      "Hola, me gustaría obtener información sobre su servicio de Rehabilitación geriátrica.",
+    title: "Rehabilitación geriátrica",
+    description:
+      "Mantén la independencia y calidad de vida en adultos mayores.",
+  },
+  {
+    message:
+      "Hola, me gustaría saber más sobre su servicio de Fisioterapia Traumatológica.",
+    title: "Fisioterapia Traumatológica",
+    description:
+      "Tratamiento de lesiones traumáticas como fracturas y esguinces.",
+  },
+  {
+    message:
+      "Hola, me gustaría obtener información sobre su servicio de Fisioterapia Neurológica.",
+    title: "Fisioterapia Neurológica",
+    description: "Mejora la movilidad en afecciones del sistema nervioso.",
+  },
+];
+
+---
+
+{
+  firstGroupCarouselItems.map(({ description, message, title }) => {
+    return (
+      <div
+        class="duration-700 ease-in-out flex justify-center items-center"
+        data-carousel-item
+      >
+        <CarouselItem description={description} message={message} title={title}>
+          {/* <Search /> */}
+        </CarouselItem>
+      </div>
+    );
+  })
+}
