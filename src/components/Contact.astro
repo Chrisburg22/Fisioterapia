@@ -19,20 +19,6 @@ if (Astro.request.method === "POST") {
     console.error(error);
   }
 }
-if (Astro.request.method == "POST") {
-  try {
-    const data = await Astro.request.formData();
-    const messaje = data.get("message");
-    const email = data.get("email");
-    // const password = data.get("password");
-    // Do something with the data
-    console.log(email, messaje);
-  } catch (error) {
-    if (error instanceof Error) {
-      console.error(error.message);
-    }
-  }
-}
 ---
 
 <section id="call-to-action" class="text-gray-600 body-font relative">
