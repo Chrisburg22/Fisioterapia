@@ -3,16 +3,14 @@ import Paquetes from "./Paquetes.astro";
 ---
 
 <div
-id="paquetes"
+  id="paquetes"
   class="relative px-8 py-10 bg-white border-t border-gray-200 md:py-16 lg:py-24 xl:py-40 xl:px-0"
 >
   <div
     id="pricing"
     class="container flex flex-col items-center h-full max-w-6xl mx-auto"
   >
-    <h2
-      class="text-black text-md uppercase font-semibold tracking-widest"
-    >
+    <h2 class="text-black text-md uppercase font-semibold tracking-widest">
       Paquetes
     </h2>
     <h3
@@ -21,22 +19,46 @@ id="paquetes"
       Planes accesibles para cualquiera
     </h3>
 
-    <div class="fw-full mx-auto md:max-w-6xl sm:px-8">
+    <div
+      class="fw-full mx-auto md:max-w-6xl sm:px-8 flex-column justify-center items-center"
+    >
       <!-- Basic Pricing -->
       <div class="relative flex flex-col items-center sm:flex-row gap-8">
         <Paquetes
           title="Básico"
-          content={["5 sesiones", "Servicio a domicilio"]}
-          description="Paquete de 5 sesiones de terapia física"
+          content={["5 sesiones"]}
+          description={["Paquete de 5 sesiones de terapia física."]}
           price={1700}
           message="Hola, me gustaría saber más acerca de tu paquete BASICO de 5 sesiones"
         />
         <Paquetes
           title="Pro"
-          content={["10 sesiones", "Servicio a domicilio"]}
-          description="Paquete de 10 sesiones de terapia física"
+          content={["10 sesiones"]}
+          description={["Paquete de 10 sesiones de terapia física."]}
           price={3000}
           message="Hola, me gustaría saber más acerca de tu paquete PRO de 10 sesiones"
+        />
+      </div>
+      <div class="relative flex flex-col items-center sm:flex-row gap-8">
+        <Paquetes
+          title="Basic a domicilio"
+          content={["1 sesión", "Servicio a domicilio"]}
+          description={[
+            "Paquete de 1 sesiones de terapia física.",
+            "El precio puede variar segun la distancía",
+          ]}
+          price={500}
+          message="Hola, me gustaría saber más acerca de tu paquete BASIC a domicilio de 1 sesión"
+        />
+        <Paquetes
+          title="Pro a domicilio"
+          content={["10 sesiones", "Servicio a domicilio"]}
+          description={[
+            "Paquete de 10 sesiones de terapia física.",
+            "El precio puede variar segun la distancía",
+          ]}
+          price={4500}
+          message="Hola, me gustaría saber más acerca de tu paquete PRO a domicilio de 10 sesiones"
         />
       </div>
     </div>

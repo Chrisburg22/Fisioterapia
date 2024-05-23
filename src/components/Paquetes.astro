@@ -1,6 +1,6 @@
 ---
 interface Props {
-  description: string;
+  description: string[];
   title: string;
   price: number;
   content: string[];
@@ -29,9 +29,7 @@ const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
       >
         <span class="mr-1 -ml-2 text-lg text-gray-700">$</span>{price}
       </h4>
-      <p class="text-sm text-gray-600">
-        {description}
-      </p>
+      {description.map((x) => <p class="text-sm text-gray-600">{x}</p>)}
     </div>
 
     <div class="flex flex-wrap px-6 mt-8">
