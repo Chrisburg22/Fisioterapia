@@ -2,7 +2,7 @@ import axios from 'axios';
 import { setJwt, getJwt } from './jwt';
 
 const customAxios = axios.create({
-    baseURL: import.meta.env.PUBLIC_SERVER,
+    baseURL: import.meta.env.PUBLIC_SERVER || 'http://localhost:4000/',
 });
 
 customAxios.defaults.headers.common['Accept'] = 'application/json';
